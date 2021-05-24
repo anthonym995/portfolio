@@ -1,0 +1,96 @@
+/* css document */
+@charset "utf-8";
+
+/* ===== Header ===== */
+
+@media only screen and (max-width: 767px) {
+    body{
+        background:none !important;
+    }
+    #header .row{
+        flex-direction: column;
+    }
+    #header .col{
+        position: relative;
+    }
+    #header .col:last-child{
+        box-shadow: 0 0px 3px 0 rgba(0, 0, 0, .5) !important;
+    }
+    #header .logo{
+        text-align: center;
+    }
+    #header .nav{
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0px;
+        background-color: var(--pry-blue);
+        overflow-x: hidden;
+        transition: .5s;
+        padding-top: 90px;
+    }
+    #header .menu{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 26px;
+        margin: 6px;
+    }
+    #header .menu:hover{
+        filter: invert(100%);
+        transition: .3s;
+    }
+    #header .close {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        width: 25px;
+        margin: 5px;
+    }
+    .close-top{
+        top:16px !important;
+        transition: .5s;
+    }
+    #header .close:hover {
+        filter: invert(100%);
+        transition: .3s;
+    }
+    #header ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #header li{
+        width: 100%;
+        padding: 12px 30px !important;
+    }
+    #header li a{
+        border: none !important;
+    }
+}
+/* @media (min-width: 576px) and (max-width: 767px) {} */
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1200px) {}
+
+/* ===== Banner ===== */
+
+@media only screen and (max-width: 767px) {
+    #banner{
+        background:linear-gradient(to bottom, #6FADE8, #BBDEFB);
+    }
+    #banner h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    #banner p {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1200px) {}
+
