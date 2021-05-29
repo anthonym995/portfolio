@@ -346,6 +346,9 @@ body{
     border-bottom: 2px solid var(--sry-white);
     transition:all .3s;
 }
+#header i{
+    padding: 0 4px 0 0;
+}
 #header .menu{display: none;}
 #header .close{display: none;}
 .scrolling-acitve {
