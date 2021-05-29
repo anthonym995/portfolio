@@ -59,6 +59,7 @@
         transition: .3s;
     }
     #header ul {
+        height: auto;
         flex-direction: column;
         justify-content: flex-start;
     }
