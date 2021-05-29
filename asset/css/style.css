@@ -322,7 +322,6 @@ body{
 }
 #header ul{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center ;
@@ -349,6 +348,7 @@ body{
 #header i{
     padding: 0 4px 0 0;
 }
+#header .menu-alt{display: none;}
 #header .menu{display: none;}
 #header .close{display: none;}
 .scrolling-acitve {

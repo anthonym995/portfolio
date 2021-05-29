@@ -14,13 +14,13 @@
         position: relative;
     }
     #header .col:last-child{
+        height: 100%;
         box-shadow: 0 0px 3px 0 rgba(0, 0, 0, .5) !important;
     }
     #header .logo{
         text-align: center;
     }
     #header .nav{
-        height: 100%;
         position: fixed;
         top: 0;
         left: 0;
@@ -28,7 +28,7 @@
         background-color: var(--pry-blue);
         overflow-x: hidden;
         transition: .5s;
-        padding-top: 90px;
+        /* padding-top: 90px; */
     }
     #header .menu{
         display: inline-block;
@@ -65,9 +65,20 @@
     #header li{
         width: 100%;
         padding: 12px 30px !important;
+        border-bottom: 1px solid var(--try-blue);
     }
     #header li a{
         border: none !important;
+    }
+    #header .menu-alt{
+        display: block;
+        text-align: center;
+        background-color: var(--try-blue);
+        padding: 28px;
+    }
+    .menu-alt-resize{
+        padding: 20px !important;
+        transition: .5s;
     }
 }
 /* @media (min-width: 576px) and (max-width: 767px) {} */

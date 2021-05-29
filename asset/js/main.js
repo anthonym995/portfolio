@@ -20,3 +20,9 @@ window.addEventListener('scroll',function() {
     header.classList.toggle('close-top',windowPosition);
 
 })
+window.addEventListener('scroll',function() {
+    let header = document.querySelector('.menu-alt');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('menu-alt-resize',windowPosition);
+
+})
