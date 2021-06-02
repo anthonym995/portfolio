@@ -101,8 +101,29 @@
         font-size: 22px;
         text-align: center;
     }
+    #welcome .col {
+        width: 80%;
+    }
+    #welcome h1{
+        font-size: 28px;
+    }
+    #welcome h3{
+        font-size: 20px;
+    }
 }
-@media (min-width: 768px) and (max-width: 991px) {}
-@media (min-width: 992px) and (max-width: 1199px) {}
-@media only screen and (min-width: 1200px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    #welcome .col {
+        width: 70%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #welcome .col {
+        width: 55%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #welcome .col {
+        width: 45%;
+    }
+}
 
