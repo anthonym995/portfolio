@@ -48,7 +48,6 @@
         top: 25px;
         right: 10px;
         width: 25px;
-        margin: 5px;
     }
     .close-top{
         top:16px !important;
@@ -75,15 +74,27 @@
         display: block;
         text-align: center;
         background-color: var(--try-blue);
-        padding: 28px;
+        padding: 20px;
     }
     .menu-alt-resize{
-        padding: 20px !important;
+        padding: 14px !important;
         transition: .5s;
     }
 }
 /* @media (min-width: 576px) and (max-width: 767px) {} */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    #header .row{
+        flex-direction: column;
+    }
+    .logo-name{
+        display: block;
+        text-align: center;
+    }
+    #header ul{
+        justify-content: center;
+    }
+
+}
 @media (min-width: 992px) and (max-width: 1199px) {}
 @media only screen and (min-width: 1200px) {}
 

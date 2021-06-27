@@ -136,17 +136,17 @@ img {
 
 /* ===== Layout-Preset ===== */
 
-body{
+/* body{
     background: url(../img/body-bg.png) no-repeat;
     background-position:center -120px;
     background-size: inherit;
-}
+} */
 
 .wrapper {width: 100%;margin: 0 auto;overflow: hidden;}
 .section {width: 100%;padding: 60px 0;}
 .section-header {width: 100%;padding: 90px 0;}
 .footer-section{padding: 30px;}
-.container {max-width: 1366px;margin: 0 auto;}
+.container {margin: 0 auto !important;}
 .row-f{display: flex;}
 .col-w-auto{flex: 1;}
 
@@ -158,21 +158,21 @@ body{
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.99px) {
-    .container {width: calc(100% - 80px);}
+    .container {width: calc(100% - 60px);}
     .dir-col {flex-direction: column;}
     .section {width: 100%;padding: 40px 0;}
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.99px) {
-    .container {width: calc(100% - 120px);}
+    .container {width: calc(100% - 80px);}
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.99px) {
-    .container {width: calc(100% - 140px);}
+    .container {width: calc(100% - 100px);}
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .container {width: calc(100% - 160px);}
+    .container {width: 1140px;}
 }
 
 
@@ -315,6 +315,9 @@ body{
     width: 100%;
     box-shadow: 0 0px 3px 0 rgba(0, 0, 0, .5) !important;
 }
+.header{
+    padding:16px 0;
+}
 #header .logo-name{
     line-height: 1.5;
     font-family: 'poppins';
@@ -336,12 +339,12 @@ body{
 #header li:first-child {
     padding: 0 12px 0 0px;
 }
-#header a {
+.nav-item{
     font-family: 'poppins';
     color: var(--pry-text);
     font-size: 16px;
 }
-#header a:hover{
+.nav-item:hover{
     color: var(--sry-white);
     border-bottom: 2px solid var(--sry-white);
     transition:all .3s;
@@ -356,11 +359,20 @@ body{
     background: var(--pry-blue);
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1) !important;
     transition: .5s;
-    padding: 16px 0 !important;
+    padding: 10px 0 !important;
+}
+.color-white{
+    color: var(--sry-white) !important;
+    transition: .3s;
 }
 
-
 /* ===== Banner ===== */
+.ban-bg{
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #B5DAFF, #1976D2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #B5DAFF, #1976D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 #banner .col{
     width: 100%;
     flex-direction: column;
@@ -369,6 +381,10 @@ body{
     width: 200px;
     box-shadow: 0 0 10px var(--pry-blue);
     border-radius: 100px;
+}
+#banner img:hover{
+    transform: scale(1.1);
+    transition: .3s;
 }
 #banner p{
     font-size: 28px;
@@ -485,7 +501,7 @@ body{
     width: 100%;
     height: 100%;
     background-color:rgba(0,0,0,0.5);
-    transition:all .7s;
+    transition:all .3s;
 
 }
 #portfolio .overlay-head{

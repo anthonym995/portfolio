@@ -12,17 +12,22 @@ window.addEventListener('scroll',function() {
     let header = document.querySelector('#header');
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('scrolling-acitve',windowPosition);
-
 })
+
 window.addEventListener('scroll',function() {
     let header = document.querySelector('.close');
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('close-top',windowPosition);
-
 })
+
 window.addEventListener('scroll',function() {
     let header = document.querySelector('.menu-alt');
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('menu-alt-resize',windowPosition);
+})
 
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('.logo-name');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('color-white', windowPosition);
 })
