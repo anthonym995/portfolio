@@ -378,7 +378,7 @@ img {
     flex-direction: column;
 }
 #banner img{
-    width: 200px;
+    width: 160px;
     box-shadow: 0 0 10px var(--pry-blue);
     border-radius: 100px;
 }
