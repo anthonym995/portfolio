@@ -201,6 +201,8 @@ img {
 .f{display: flex;}
 .full{width: 100%;}
 .f-auto{flex:1 1 auto;}
+.f-wrap{flex-wrap: wrap;}
+.f-even{justify-content: space-evenly;}
 
 /* flex direction */
 .fdc{flex-direction: column;}
