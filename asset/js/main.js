@@ -38,7 +38,7 @@ window.addEventListener('scroll', function () {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 1500,
     // reset: true
 });
 
@@ -72,3 +72,17 @@ sr.reveal('.message-area', { delay: 250 });
 sr.reveal('.contact2', { interval: 200 });
 sr.reveal('.con_sub', { delay: 250 });
 sr.reveal('.con_text', { delay: 300 });
+
+
+// zoom effect for image
+var banImg = document.getElementById("zoom");
+
+banImg.addEventListener("mouseover", function(){
+    banImg.style.width = "165px";
+    banImg.style.transition = "all .2s ease-in";
+})
+
+banImg.addEventListener('mouseout',function() {
+    banImg.style.width = "160px";
+    banImg.style.transition = "all .2s ease-out";
+})

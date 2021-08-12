@@ -384,10 +384,10 @@ img {
     box-shadow: 0 0 10px var(--pry-blue);
     border-radius: 100px;
 }
-#banner img:hover{
+/* #banner img:hover{
     transform: scale(1.1);
     transition: .3s;
-}
+} */
 #banner p{
     font-size: 28px;
     color: var(--pry-text);
