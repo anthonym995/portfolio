@@ -86,3 +86,28 @@ banImg.addEventListener('mouseout',function() {
     banImg.style.width = "160px";
     banImg.style.transition = "all .2s ease-out";
 })
+
+
+// typing effect 
+const words = ["Anthony", "Mech Engineer", "Developer"];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+    if(count === words.length){
+        count = 0;
+    }
+    currentText = words[count];
+    letter = currentText.slice(0,++index);
+    
+    document.querySelector('.typing').textContent = letter;
+
+    if(letter.length === currentText.length){
+        count++;
+        index = 0;
+    }
+    setTimeout(type,300);
+})();
