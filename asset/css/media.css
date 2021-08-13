@@ -101,9 +101,9 @@
 /* ===== Banner ===== */
 
 @media only screen and (max-width: 767px) {
-    #banner{
-        /* background:linear-gradient(to bottom, #6FADE8, #BBDEFB); */
-    }
+    /* #banner{
+        background:linear-gradient(to bottom, #6FADE8, #BBDEFB);
+    } */
     #banner h1{
         font-size: 32px;
         text-align: center;
