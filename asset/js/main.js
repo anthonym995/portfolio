@@ -8,6 +8,14 @@ function closeNav() {
     document.getElementById("nav").style.width = "0";
 }
 
+document.addEventListener("click", function(event) {
+      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+      if (event.target.matches(".close") || !event.target.closest(".header")) {
+        closeNav();
+      }
+    }, false
+  );
+
 window.addEventListener('scroll',function() {
     let header = document.querySelector('#header');
     let windowPosition = window.scrollY > 0;
@@ -89,7 +97,7 @@ banImg.addEventListener('mouseout',function() {
 
 
 // typing effect 
-const words = ["Hi I'm Anthony", "Mech Engineer", "Front-End Developer"];
+const words = ["Hi I'm Anthony", "Mech Engineer", "Developer"];
 
 let count = 0;
 let index = 0;
