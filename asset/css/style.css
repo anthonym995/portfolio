@@ -485,7 +485,7 @@ img {
     background-color: var(--pry-blue);
 }
 .skill-bar-html{
-    width: 80%;
+    width: 90%;
     transition: .5s;
 }
 .skill-bar-css{
@@ -497,11 +497,11 @@ img {
     transition: .5s;
 }
 .skill-bar-ps{
-    width: 65%;
+    width: 85%;
     transition: .5s;
 }
 .skill-bar-ils{
-    width: 60%;
+    width: 65%;
     transition: .5s;
 }
 .skill-bar-xd{
