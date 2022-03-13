@@ -89,7 +89,7 @@ banImg.addEventListener('mouseout',function() {
 
 
 // typing effect 
-const words = ["Anthony", "Mech Engineer", "Developer"];
+const words = ["Hi I'm Anthony", "Mech Engineer", "Front-End Developer"];
 
 let count = 0;
 let index = 0;
@@ -109,5 +109,5 @@ let letter = "";
         count++;
         index = 0;
     }
-    setTimeout(type,300);
+    setTimeout(type,500);
 })();
