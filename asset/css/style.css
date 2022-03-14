@@ -512,7 +512,7 @@ img {
 /* ===== Portfolio ===== */
 
 #portfolio img{
-    max-width: 100% !important;
+    max-width: 90% !important;
     width: 100%;
     display: block;
 }
