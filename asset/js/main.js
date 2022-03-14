@@ -120,17 +120,3 @@ let letter = "";
     setTimeout(type,500);
 })();
 
-
-var element = document.getElementsByClassName("port_sec");
-var zimg = document.
-console.log(element);
-
-for(var i= 0; i < element.length; i++) {
-
-}
-
-element.addEventListener("mouseover", function(){
-    for(var i= 0; i < element.length; i++) {
-
-    }
-});
