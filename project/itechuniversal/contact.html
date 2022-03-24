@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>contact</title>
+
+</head>
+<body>
+    
+<div class="wrapper"> <!-- wrapper -->
+
+    <section id="header"> <!-- header -->
+
+        <div class="container"> <!-- container -->
+
+            <div class="row"> <!-- row -->
+
+                <div class="col logo"> <!-- logo column one -->
+
+                    <a href="./index.html"><img src="./icons/logo.png" alt="itechuniversal.com"></a>
+
+                    <a class="ham-menu" onclick="myFunction()" href="javascript:void(0);"><img src="./icons/bar.png" alt="menu"></a>
+
+                </div> <!-- End logo -->
+
+                <div class="col nav" id="nav"> <!-- nav column two -->
+
+                    <ul>
+                        <li><a class="fix" href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./index.html#service">Our Services</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="contact" href="./contact.html">Contact</a></li>
+                    </ul>
+
+                </div> <!-- nav ending -->
+
+            </div> <!-- End of row -->
+
+        </div> <!-- End of container -->
+
+    </section> <!-- End of header -->
+
+
+    <section id="contact"> <!-- contact section-->
+
+        <div class="container"> <!-- Container -->
+
+            <div class="row"> <!-- Row -->
+
+                <h2><span class="under">Co</span>ntact Us</h2>
+
+                <div class="column">
+
+                    <div class="col col1">
+                        <h3>Send a Message</h3>
+                        <form action="/action_page.php"></form>
+                            <input type="text" id="yourname" name="yourname" placeholder="Your Name"><br>
+                            <input type="text" id="email" name="email" placeholder="Email Address"><br>
+                            <textarea id="subject" name="subject" placeholder="Message.." style="min-height: 200px;"></textarea><br>
+                            <input type="submit" value="Submit">
+                        </form>
+
+                    </div>
+
+                    <div class="col col2">
+                        <h3>Contact Info</h3>
+                        <p class="address">No.13, 1st Cross St, Rajaji Colony, Lake Area, Nungambakkam, Chennai, Tamil Nadu 600034</p> <br>
+                        <p class="mail">info.itechuniversal@gmail.com</p>
+                    </div>
+                    
+                </div>
+
+            </div> <!-- End of row -->
+
+        </div> <!-- End of container -->
+
+    </section> <!-- End of contact section-->
+
+
+    <div class="bg">
+    <section id="footer"> <!-- Footer section-->
+
+        <div class="container"> <!-- Container -->
+
+            <div class="row"> <!-- Row -->
+
+                <div class="col col1">
+                    <img class="logo" src="./icons/logo.png"  alt="logo">
+                    <p>iTechUniversal started providing digital transformation solutions and services since 2020.</p>
+                    <div class="social-link">
+                        <a href=" https://www.facebook.com/itechuniversal.chennai" target="_blank"><img src="./icons/fb.png" alt="fb"></a>
+                        <a href=" https://twitter.com/iTechUniversal1" target="_blank"><img src="./icons/twitter.png" alt="twitter"></a>
+                        <a href="https://www.linkedin.com/company/itechuniversal" target="_blank"><img src="./icons/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <p class="copy">&#169;2020 ITECH UNIVERSAL</p>
+                    
+                </div>
+
+                <div class="col col2">
+                    <h3><span class="under">Quick Link</span></h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./index.html#service">Services</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="col col3">
+                    <a href="./contact.html"><h3><span class="under"> Contact Us</span></h3></a>
+
+                    <p class="address"><strong>Head Office:</strong> No.13, 1st Cross St, Rajaji Colony, Lake Area, Nungambakkam, Chennai-600 034.</p> <br>
+
+                    <p class="address"><strong>Dev. Center:</strong> No.45, Marudha Pandian Street, Kamarajapuram, Velachery, Chennai-600 042.</p> <br>
+
+                    <a  href="tel:+919244414449"><p class="call">+91 9244414449</p></a> <br>
+
+                    <a  href="mailto:info.itechuniversal@gmail.com" target="_blank"><p class="mail">info.itechuniversal@gmail.com</p></a>
+
+                    
+                </div>
+
+            </div> <!-- End of row -->
+
+        </div> <!-- End of container -->
+
+    </section> <!-- End of Footert section-->
+    </div>
+
+</div> <!--  End of wrapper -->
+
+
+<!-- ham menu -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
