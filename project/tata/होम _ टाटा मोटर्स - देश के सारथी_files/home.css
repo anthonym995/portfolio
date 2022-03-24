@@ -1,0 +1,338 @@
+/*** Banner Start ***/
+.banner-section {
+    background-image: url(../images/desk-banner.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 640px;
+}
+.form-body {
+    width: 25rem;
+    margin-top: 1.5625rem;
+    background: #ffffff;
+    padding: 1.5625rem 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+.form-body  .form-group{
+      margin-bottom: 2rem;
+}
+#registerform label.error {
+    font-size: 12px;
+    color: #f00;
+    display: block;
+    padding-top: 5px;
+}
+.form-body .form-control {
+    border: none;
+    border-bottom: 1px solid #0A0A5F;
+    border-radius: 0;
+    padding: 0.09375rem 0;  
+    color: #0A0A5F;
+}
+.form-body .form-control:focus{
+    box-shadow: none;
+}
+.form-submit, .form-submit:hover {
+    background: #0A0A5F;
+    color: #ffffff;
+    padding: 0.4375rem 1.6575rem;
+    margin-top: 0.75rem;
+}
+.form-body .form-control::-webkit-input-placeholder { color: #0A0A5F; }  /* WebKit, Blink, Edge */
+.form-body .form-control:-moz-placeholder { color: #0A0A5F; }  /* Mozilla Firefox 4 to 18 */
+.form-body .form-control::-moz-placeholder { color: #0A0A5F; }  /* Mozilla Firefox 19+ */
+.form-body .form-control:-ms-input-placeholder { color: #0A0A5F; }  /* Internet Explorer 10-11 */
+.form-body .form-control::-ms-input-placeholder { color: #0A0A5F; }  /* Microsoft Edge */
+.check-label {
+    display: block;
+    position: relative;
+    padding-left: 2.1875rem;
+    margin-bottom: 0.625rem;
+    font-size: 0.75rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.check-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border:1px solid #0A0A5F;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-label:hover input ~ .checkmark {
+    background-color: #ffffff;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check-label input:checked ~ .checkmark {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check-label .checkmark:after {
+    left: 9px;
+    top: 3px;
+    width: 7px;
+    height: 15px;
+    border: solid #0A0A5F;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .form-check{
+      padding: 0;
+      margin: 0;
+  }
+  #inputselect {
+    background-image: url(../images/down_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+/*** Banner End ***/
+/*** Grid Start ***/
+.grid-section {
+    padding: 6.25rem 0;
+}
+.grid-box{
+    margin-top: 3.125rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.col.grid-bg-01 {
+    background-image: url(../images/grid-bg-01.png);
+
+    
+}
+.col.grid-bg-02 {
+    background-image: url(../images/grid-bg-02.png);
+
+}
+.col.grid-bg-03 {
+    background-image: url(../images/grid-bg-03.png);
+
+}
+.col.grid-bg-01,.col.grid-bg-02, .col.grid-bg-03{
+padding-left: 1.75rem;
+    padding-top: 0.625rem;
+    padding-bottom: 3.125rem;
+    padding-right: 1.75rem;
+    height: 16.25rem;
+    max-width: 25rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.grid-icon {
+    text-align: center;
+    padding-top: 2.5rem;
+}
+.grid-text p {
+    text-align: center;
+    padding-top: 1.5625rem;
+    color: #ffffff;
+    font-family: kohinoordevanagari-regular, sans-serif;
+    font-size: 1.5rem;
+}
+.grid-number {
+    position: absolute;
+    color: #FFC505;
+    top: auto;
+    font-family: 'KohinoorDevanagari-Bold';
+    font-size: 2rem;
+    font-weight: bold;
+}
+.text-block {
+    display: block;
+}
+.grid-icon img {
+    height: 4rem;
+}
+.check-label span {
+    vertical-align: top;
+    display: initial;
+    cursor: pointer;
+}
+
+/*** Grid End ***/
+
+/*** BG Start ***/
+.bg-section{
+    background-image: url(../images/bg-section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46.25rem;
+}
+
+.bg-text-block {
+    width: 27.8125rem;
+    padding-top: 4.375rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 45rem;
+}
+.yellow-bg {
+    background: #FFC505;
+    width: 40rem;
+    margin-left: 34rem;
+    margin-top: 2rem;
+    padding: 3.125rem 3.75rem;
+    height: 23.75rem;
+}
+.yellow-bg h3 {
+    font-family: 'KohinoorDevanagari-Bold';
+    font-size: 2.875rem;
+    line-height: 3.125rem;
+    font-weight: bold;
+}
+.yellow-bg h3 .text-block {
+    font-family: kohinoordevanagari-regular, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+.yellow-bg p {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+/*** BG End ***/
+/*** Blog Start ***/
+.blog-section{
+    padding: 6.25rem 0;
+}
+.blog-grid {
+    padding-top: 2.5rem;
+}
+.row.blog-grid .col {
+    padding-right: 2rem;
+}
+.blog-head {
+    font-family: 'KohinoorDevanagari-Bold';
+    padding-top: 1.5625rem;
+    padding-bottom: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
+    font-weight: bold;
+}
+.blog-text {
+    line-height: 2.1875rem;
+    font-size: 1.25rem;
+}
+
+/*** Blog End ***/
+/*** Yellow Shield Start ***/
+.shield-img {
+    width: 100%;
+}
+.yellow-shield-section {
+    padding: 5rem 0 4.375rem;
+    background-image: url(../images/shield-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.yellow-shield-section p {
+    padding: 1.25rem 0 1.875rem;
+}
+.btn-row{
+    margin-top: 1.875rem;
+}
+/*** Yellow Shield End ***/
+/*** Footer Start ***/
+.footer-copyright {
+    background: #232323;
+    color: #ffffff;
+    padding: 1.75rem 0;
+}
+.foo-social li {
+    padding-left: 1.25rem;
+}
+.foo-social {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.copy-text {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    position: relative;
+    top: 0.3125rem;
+}
+/*** Footer End ***/
+.desktop-view{
+    display: block;
+}
+.mobile-view{
+    display: none;
+}
+.mob-bg-section .bg-text-block {
+    background-image: url(../images/mob-blue-bg-section.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 2rem 2.5rem;
+}
+.mob-bg-section .yellow-bg {
+    margin: 0;
+    height: 100%;
+    padding: 2rem 2.5rem;
+    width: 100%;
+}
+
+/**** Bug Fixes ****/
+.form-body .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+/**** Bug Fixes ****/
+.home-icon.mob {
+    display: none;
+}
+.shield_white_bg {
+    background: #ffffff;
+    text-align: center;
+    padding: 1.675rem 0;
+}
+.shield_text {
+    font-family: 'KohinoorDevanagari-Bold';
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color: #0a0a5f;
+    padding: 0 1rem;
+    font-weight: bold;
+}

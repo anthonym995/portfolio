@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'KohinoorDevanagari-Light';
+    src: url('KohinoorDevanagari-Light.eot');
+    src: url('KohinoorDevanagari-Light.eot?#iefix') format('embedded-opentype'),
+        url('KohinoorDevanagari-Light.woff2') format('woff2'),
+        url('KohinoorDevanagari-Light.woff') format('woff'),
+        url('KohinoorDevanagari-Light.ttf') format('truetype'),
+        url('KohinoorDevanagari-Light.svg#KohinoorDevanagari-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KohinoorDevanagari-Bold';
+    src: url('KohinoorDevanagari-Bold.eot');
+    src: url('KohinoorDevanagari-Bold.eot?#iefix') format('embedded-opentype'),
+        url('KohinoorDevanagari-Bold.woff2') format('woff2'),
+        url('KohinoorDevanagari-Bold.woff') format('woff'),
+        url('KohinoorDevanagari-Bold.ttf') format('truetype'),
+        url('KohinoorDevanagari-Bold.svg#KohinoorDevanagari-Bold') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KohinoorDevanagari-Semibold';
+    src: url('KohinoorDevanagari-Semibold.eot');
+    src: url('KohinoorDevanagari-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('KohinoorDevanagari-Semibold.woff2') format('woff2'),
+        url('KohinoorDevanagari-Semibold.woff') format('woff'),
+        url('KohinoorDevanagari-Semibold.ttf') format('truetype'),
+        url('KohinoorDevanagari-Semibold.svg#KohinoorDevanagari-Semibold') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KohinoorDevanagari-Medium';
+    src: url('KohinoorDevanagari-Medium.eot');
+    src: url('KohinoorDevanagari-Medium.eot?#iefix') format('embedded-opentype'),
+        url('KohinoorDevanagari-Medium.woff2') format('woff2'),
+        url('KohinoorDevanagari-Medium.woff') format('woff'),
+        url('KohinoorDevanagari-Medium.ttf') format('truetype'),
+        url('KohinoorDevanagari-Medium.svg#KohinoorDevanagari-Medium') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KohinoorDevanagari-Regular';
+    src: url('KohinoorDevanagari-Regular.eot');
+    src: url('KohinoorDevanagari-Regular.eot?#iefix') format('embedded-opentype'),
+        url('KohinoorDevanagari-Regular.woff2') format('woff2'),
+        url('KohinoorDevanagari-Regular.woff') format('woff'),
+        url('KohinoorDevanagari-Regular.ttf') format('truetype'),
+        url('KohinoorDevanagari-Regular.svg#KohinoorDevanagari-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
