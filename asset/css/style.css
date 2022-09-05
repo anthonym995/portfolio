@@ -76,6 +76,11 @@ img{
     src: url(../font/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family:'poppins-medium';
+    src: url(../font/Poppins-Medium.ttf);
+}
+
 
 /* ===== Variables ===== */
 /* ===== Colors ===== */
@@ -108,7 +113,7 @@ body{
     background-color: var(--sry-white);
 }
 h1,h2,h3{
-    font-family: 'poppins';
+    font-family: 'poppins-medium';
     color: var(--pry-text);
     font-weight: 700;
 }
@@ -127,7 +132,7 @@ img {
     max-width: 60%;
 }
 .sub-heading{
-    font-family: 'poppins' !important;
+    font-family: 'poppins-medium' !important;
     text-align: center;
     color: var(--pry-blue);
     font-size: var(--h2-font);
@@ -321,8 +326,9 @@ img {
     padding:16px 0;
 }
 #header .logo-name{
+    color: var(--sry-white);
     line-height: 1.5;
-    font-family: 'poppins';
+    font-family: 'poppins-medium';
     font-size: 26px;
 }
 #header ul{
@@ -342,12 +348,11 @@ img {
     padding: 0 12px 0 0px;
 }
 .nav-item{
-    font-family: 'poppins';
-    color: var(--pry-text);
+    font-family: 'poppins-medium';
+    color: var(--sry-white);
     font-size: 16px;
 }
 .nav-item:hover{
-    color: var(--sry-white);
     border-bottom: 2px solid var(--sry-white);
     transition:all .3s;
 }
@@ -422,7 +427,7 @@ img {
     text-align: center;
 }
 .btn-contact{
-    font-family: 'poppins';
+    font-family: 'poppins-medium';
     color: var(--sry-white);
     background-color: var(--pry-blue);
     padding: 10px 40px;
@@ -449,7 +454,7 @@ img {
 
 /* ===== Skills ===== */
 #skills .text{
-    font-family: 'poppins';
+    font-family: 'poppins-medium';
     font-size: 18px;
 }
 #skills i{
