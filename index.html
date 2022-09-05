@@ -278,10 +278,44 @@
                 <div class="row centre pb40 pt20 pt30-sm"><span class="sub-heading">Contact</span></div>
                 <div class="row row-f dir-col">
                     <div class="col col-w-auto mx-auto centre mb-40-sm centre fdc">
-                        <input class="contact-input " type="text" name="name" placeholder="Name"> 
+                        <!-- access token -->
+                        <!-- jwmqfd27bjx3g9v73jmnbw2o -->
+                        <form action="https://postmail.invotes.com/send"
+                            method="post" id="email_form">
+
+                            <input class="contact-input" type="text" name="Subject" placeholder="Subject" />
+                            <input class="contact-input" type="text" name="extra_Name" placeholder="Name" />
+                            <textarea class="message-area " name="text" placeholder="Message"></textarea>
+                            <input type="hidden" name="access_token" value="jwmqfd27bjx3g9v73jmnbw2o" />
+                            <!-- return urls can be fully qualified -OR-
+                                start with / for root relative -OR-
+                                start with . for url relative --> 
+
+                            <input type="hidden" name="success_url" value="./thank.html" />
+                            <input type="hidden" name="error_url" value="./thank.html" />
+                            <!-- <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" /> -->
+                            <!-- set the reply-to address -->
+                            <!-- <input type="text" name="reply_to"
+                                        placeholder="Your Email" /> -->
+
+                            <!-- to append extra fields, use the extra_ prefix.
+                                Entries will be appended to your message body. -->
+                            <!-- <input type="text" name="extra_phone_number"
+                                        placeholder="Phone Number" /> -->
+
+                            <!-- to split your message into 160 chars
+                                for an sms gateway -->
+                            <!-- <input type="hidden"
+                                        name="sms_format" value="true" /> -->
+                        
+                            <input class="btn-contact contact2" id="submit_form" type="submit" value="Send" />
+                        </form>
+
+                        <!-- <input class="contact-input " type="text" name="name" placeholder="Name"> 
                         <input class="contact-input " type="text" name="Email" placeholder="Email">
                         <textarea class="message-area " name="message" id="message" placeholder="Message.."></textarea>
-                        <button class="btn-contact contact2 " type="submit">Submit</button>
+                        <button class="btn-contact contact2 " type="submit">Submit</button> -->
                     </div>
                     <div class="col col-w-auto p40 p12-sm">
                         <h3 class="con_sub pb8">Address</h3>

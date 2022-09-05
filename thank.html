@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/media.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Thank you</title>
+
+    <style>
+        .thankyou {
+            height: 100vh;
+            background: #1A2980;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, rgb(255,255,255), #1976D2);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, rgb(255,255,255) , #1976D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ #B5DAFF*/
+        }
+        .fh {
+            height: 100vh;
+        }
+        .thankbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .msg {
+            color: #fff;
+        }
+        .back {
+            color: black;
+        }
+        .back:hover {
+            color: #1976D2;
+            text-decoration: underline;
+        }
+        .left {
+            color: transparent;
+        }
+        .back:hover .left {
+            color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="thankyou" >
+            <div class="container fh">
+                <div class="row f fh">
+                    <div class="thankbox col fh">
+                        <h1 class="msg">Thank you</h1>
+                        <a class="back" href="index.html">
+                            <i class='left bx bxs-chevron-left'></i> Go to home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

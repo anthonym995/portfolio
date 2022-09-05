@@ -115,7 +115,6 @@ body{
 h1,h2,h3{
     font-family: 'poppins-medium';
     color: var(--pry-text);
-    font-weight: 700;
 }
 
 h1{font-size: var(--h1-font);}
