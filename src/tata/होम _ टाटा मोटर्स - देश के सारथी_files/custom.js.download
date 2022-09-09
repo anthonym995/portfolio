@@ -1,0 +1,289 @@
+function isNumberOnly(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+$(document).ready(function () { 
+  
+  jQuery.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
+    }
+  });
+
+  /*Action : ajax
+  * used to: submit forms
+  * Instance of: Jquery vailidate libaray
+  * @JSON 
+  **/
+
+  $(window).scroll(function () {   
+    //console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 80) {
+      $('.header').addClass('navbar-fixed-top');
+    }
+
+    if ($(window).scrollTop() < 80) {
+      $('.header').removeClass('navbar-fixed-top');
+    }
+  });
+
+  $("#registerform").validate({
+    /*errorPlacement: function (error, element) {
+       return;
+    },*/
+    highlight: function(element) {
+      $(element).addClass('is-invalid');
+      //$(element).parent().addClass("error");
+    },
+    unhighlight: function(element) {
+      //$(element).parent().removeClass("error");
+      $(element).removeClass('is-invalid').addClass('is-valid');
+    },
+
+    rules: {
+      first_name: {
+        required: true,
+        lettersonly: true       
+      },
+      phone: {
+        required: true,
+        noSpace: true,
+        phoneno:true
+      },
+      chasis_number:{
+        required: true
+      },
+      application:{
+        required: true
+      },
+      others_application:{
+        other_valid: true
+      },
+      agree_tnc:{
+        required: true
+      },
+      agree_for_whatsapp:{
+        required: true
+      },
+    },
+    // Specify validation error messages
+    messages: {
+      first_name: {
+        required: "नाम आवश्यक है",
+        lettersonly: 'केवल अक्षरों की अनुमति है'
+      },
+      phone: {
+        required: "फोन नंबर आवश्यक है",
+        noSpace: "स्पेस की अनुमति नहीं है"
+      },
+      chasis_number:{
+        required: 'चेसिस नंबर आवश्यक है'
+      },
+      application:{
+        required: 'कृपया आवेदन प्रकार का चयन करें'
+      },
+      agree_tnc:{
+        required: 'यह क्षेत्र आवश्यक है'
+      },
+      agree_for_whatsapp:{
+        required: 'यह क्षेत्र आवश्यक है'
+      }
+    },   
+
+    submitHandler: function(form){
+      
+      var formData = new FormData($("#registerform")[0]);
+      $.ajax({
+          beforeSend:function(){
+            $("#registerform").find(':submit').attr('disabled',true);
+            toastr.clear();
+            $("#registerform").find('button>i').show();
+          },
+          url: $("#registerform").attr('action'),
+          data: formData,
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          success:function(response){
+            if(response.success){
+                toastr.success(response.message,'Success');
+                $('#form_body_register').html(response.html);
+            }else{
+                toastr.success(response.message,'Error');
+            }
+          },
+          complete:function(){
+            $("#registerform").find(':submit').attr('disabled',false);
+            $("#registerform").find('button>i').hide();
+          },
+          error:function(status,error){
+            var errors = JSON.parse(status.responseText);
+            toastr.clear();
+            if(status.status == 401){
+              $("#registerform").find(':submit').attr('disabled',false);
+              $.each(errors.error, function(i,v){ 
+                toastr.error( v[0],'Opps!');
+              }); 
+            }else{
+              toastr.error(errors.message,'Opps!');
+            }         
+        }     
+      }); 
+      return false;
+    }
+  }); 
+
+  $(document).on('submit', '#otpRegisterform', function(){
+
+      var formData = new FormData($("#otpRegisterform")[0]);
+      $.ajax({
+          beforeSend:function(){
+            $("#otpRegisterform").find(':submit').attr('disabled',true);
+            toastr.clear();
+            $("#otpRegisterform").find('button>i').show();
+          },
+          url: $("#otpRegisterform").attr('action'),
+          data: formData,
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          success:function(response){
+            if(response.success){
+              $('#form_body_register').html(response.html);
+            }else{
+              toastr.success(response.message,'Error');
+            }
+          },
+          complete:function(){
+            $("#otpRegisterform").find(':submit').attr('disabled',false);
+            $("#otpRegisterform").find('button>i').hide();
+          },
+          error:function(status,error){
+            var errors = JSON.parse(status.responseText);
+            toastr.clear();
+            if(status.status == 401){
+              $("#otpRegisterform").find(':submit').attr('disabled',false);
+              $.each(errors.error, function(i,v){ 
+                toastr.error( v[0],'Opps!');
+              }); 
+            }else{
+              toastr.error(errors.message,'Opps!');
+            }         
+        }     
+      }); 
+      return false;
+  });
+
+  $(document).on('click', '#resendOTP', function(){
+    
+      var formData = new FormData($("#otpRegisterform")[0]);
+      $.ajax({
+          beforeSend:function(){            
+            toastr.clear();
+          },
+          url: site_url+"/customer/register/reSentOTP",
+          data: formData,
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          success:function(response){
+            if(response.success){
+              toastr.success(response.message,'Success');
+            }else{
+              toastr.success(response.message,'Error');
+            }
+          },
+          complete:function(){
+            
+          },
+          error:function(status,error){
+            var errors = JSON.parse(status.responseText);
+            toastr.clear();
+            if(status.status == 401){
+              $.each(errors.error, function(i,v){ 
+                toastr.error( v[0],'Opps!');
+              }); 
+            }else{
+              toastr.error(errors.message,'Opps!');
+            }         
+        }     
+      });
+  });
+
+  setTimeout(function() { $(".alert").hide(); }, 2000);
+
+  $(document).on('change','#messageType', function() {
+      if($(this).val() == 'Other Message Type'){
+        $('#otherpopupmodal').modal('show');
+      }
+  });
+  
+  $(document).on('change','#inputselect', function() {      
+      if($("#inputselect option:selected" ).text() == 'अन्य'){
+        $('#others_wrap').show();
+      }else{
+        $('#others_application').val('');
+        $('#others_wrap').hide();
+      }
+  });
+
+ //validation
+  /*$('.phone').inputmask({
+      mask: "+91 999 999 9999",
+      greedy: true,
+      placeholder: " "
+  });*/
+
+  $.validator.addMethod("lettersonly", function(value, element) 
+  {
+    return this.optional(element) || /^[a-z," "]+$/i.test(value);
+  }, "केवल अक्षरों की अनुमति है"); 
+
+  $.validator.addMethod("phoneno", function (phone_number, element) {
+      phone_number = phone_number.replace(/\s+/g, "");
+      return this.optional(element) ||
+      phone_number.match(/^[6-9]\d{9}$/);
+  }, "फोन नंबर वैध नहीं है");
+
+  $.validator.addMethod("laxEmail", function(value, element) {
+    // allow any non-whitespace characters as the host part
+    return this.optional( element ) || /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/.test( value );
+  }, 'Please enter a valid email address.');
+
+  $.validator.addMethod("other_valid", function(value, element) {
+    if($("#inputselect option:selected").text() != 'अन्य'){
+    //if($('#inputselect').val() != 'Others'){ 
+      return this.optional( element );
+    }else{
+      if(value !=''){
+        return true;
+      }else{
+        return false;
+      }
+    }
+  }, "अन्य नाम आवश्यक है");
+
+  /*$(".phone, .fax").each(function (item) {
+      $(this).rules("add", {
+        phoneUS: true,
+        required: true
+      });
+  });*/
+
+  $(".email").each(function (item) {
+    $(this).rules("add", {
+      email: true,
+      laxEmail:true
+    });
+  });
+  
+  $.validator.addMethod("noSpace", function(value, element) { 
+    return value.indexOf(" ") < 0; 
+  }, "No space please and don't leave it empty");
+
+});

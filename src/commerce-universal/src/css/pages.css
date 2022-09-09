@@ -1,0 +1,153 @@
+/* css document */
+@charset "utf-8";
+
+/* mob app process */
+
+.drop-shad{
+    box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, .15);
+}
+
+
+/* it infrastruccture */
+
+/* it section nav menu */
+
+.it-section{
+    background-color: var(--white);
+    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, .1);
+}
+.contact2 {
+    background-color: var(--sky-blue);
+    color: var(--white) !important;
+    padding: 16px 36px;
+    border-radius: 4px;
+}
+
+.contact2:hover {
+    color: var(--white) !important;
+}
+
+.nav-item2 {
+    font-family: "poppins-m";
+    align-items: center;
+    text-align: center;
+    margin-left: 24px !important;
+    color: var(--black);
+    transition: all .5s;
+    opacity: .6;
+}
+.nav-item2:first-child {
+    margin-left: 0px;
+}
+.nav-item2:hover {
+    opacity: 1;
+}
+
+.subitem-it {
+    color: var(--black);
+    opacity: .6;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.subitem-it:hover {
+    opacity: 1;
+}
+/* nav menu end */
+
+
+.infra-bg{
+    background: url(../img/it_banner_back.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.w-color{
+    color: var(--white);
+}
+.b-color{
+    color: var(--blue) !important;
+}
+
+/* it infrastructure box model */
+.skyblue{
+    background-color: var(--light-blue) !important;
+}
+.darkblue{
+    background-color: var(--bg-blue) !important;
+}
+.blue{
+    color: #0089A7 !important;
+}
+.blue-sky{
+    color: var(--sky-blue);
+}
+.itbox-section .row{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.itbox{
+    width: 360px;
+    min-height: 385px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    margin-bottom: 16px;
+}
+.itbox:last-child{
+    margin-bottom: none;
+}
+.itbox:hover {
+    border: 1px solid #00B6EF;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+}
+@media screen and (max-width:767px){
+    .itbox {
+        width: 300px !important;
+    }
+}
+
+/* it section footer */
+.footer-map{
+    background: url(../img/footer_map.png) no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.btn-primary-it {
+    padding: 15px 36px;
+    color: var(--white);
+    background-color: var(--sky-blue);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-primary-it {
+        padding: 15px 18px !important;
+    }
+}
+
+/*  Bread Crumbs menu  */
+
+.breadmenu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bitem{
+    color: var(--sky-blue);
+    margin-right: 8px;
+}
+
+.blist{
+    padding: 8px 0;
+}
+.blist, .bitem {
+    font-size: 16px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 567px) {
+    .blist, .bitem {
+    font-size: 12px !important;
+    }
+}
