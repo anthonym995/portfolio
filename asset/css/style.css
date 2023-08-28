@@ -68,17 +68,17 @@ img{
 
 @font-face {
     font-family:'OpanSans';
-    src: url(../font/OpenSans-Regular.ttf);
+    src: url(../font/OpenSans-Regular.woff2);
 }
 
 @font-face {
     font-family:'poppins';
-    src: url(../font/Poppins-Bold.ttf);
+    src: url(../font/Poppins-Regular.woff2);
 }
 
 @font-face {
     font-family:'poppins-medium';
-    src: url(../font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Medium.woff2);
 }
 
 
