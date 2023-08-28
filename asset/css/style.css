@@ -492,24 +492,24 @@ img {
     width: 90%;
     transition: .5s;
 }
-.skill-bar-css{
-    width: 65%;
-    transition: .5s;
-}
 .skill-bar-js{
-    width: 60%;
+    width: 75%;
     transition: .5s;
 }
-.skill-bar-ps{
-    width: 85%;
-    transition: .5s;
-}
-.skill-bar-ils{
+.skill-bar-react{
     width: 65%;
     transition: .5s;
 }
-.skill-bar-xd{
+.skill-bar-node{
     width: 60%;
+    transition: .5s;
+}
+.skill-bar-mongodb{
+    width: 60%;
+    transition: .5s;
+}
+.skill-bar-tailwind{
+    width: 75%;
     transition: .5s;
 }
 
