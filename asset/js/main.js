@@ -97,7 +97,7 @@ banImg.addEventListener('mouseout',function() {
 
 
 // typing effect 
-const words = ["Hi I'm Anthony", "Developer"];
+const words = ["Hi I'm Anthony", "Frontend Developer", "Freelancer", "Passionate Trainer"];
 
 let count = 0;
 let index = 0;
