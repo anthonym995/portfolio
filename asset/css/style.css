@@ -387,6 +387,9 @@ img {
     line-height: 1;
     transition: all .3s ease;
 }
+#banner .name {
+    color: var(--pry-blue);
+}
 #banner img{
     width: 160px;
     box-shadow: 0 0 10px var(--pry-blue);
