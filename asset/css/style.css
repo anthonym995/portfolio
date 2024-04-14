@@ -524,12 +524,26 @@ img {
     display: block;
 }
 
-#portfolio .col{
+#portfolio .box{
     position: relative;
-    width: 340px;
-    height: 260px;
-    margin: 10px;
+    max-width: 400px;
     overflow: hidden;
+}
+#portfolio a {
+    width: 400px;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 991px) {
+    #portfolio .box{
+        position: relative;
+        max-width: 350px;
+        overflow: hidden;
+    }
+    #portfolio a {
+        width: 350px;
+        margin: 10px auto;
+    }
 }
 
 #portfolio .overlay{
@@ -553,7 +567,7 @@ img {
     font-size: 18px;
 }
 
-#portfolio .col:hover .overlay{
+#portfolio .port_sec:hover .overlay{
     top: -100%;
     left: -100%;
     width: 100%;
@@ -561,6 +575,8 @@ img {
     opacity: 0;
     transform: scale(0);
 }
+
+
 
 .port_sec {
     overflow: hidden;
