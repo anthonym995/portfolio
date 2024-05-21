@@ -1,85 +1,101 @@
 // Javascript document
 
 function openNav() {
-    document.getElementById("nav").style.width = "280px";
+  document.getElementById("nav").style.width = "280px";
 }
 
 function closeNav() {
-    document.getElementById("nav").style.width = "0";
+  document.getElementById("nav").style.width = "0";
 }
 
-document.addEventListener("click", function(event) {
-      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-      if (event.target.matches(".close") || !event.target.closest(".header")) {
-        closeNav();
-      }
-    }, false
-  );
+document.addEventListener(
+  "click",
+  function (event) {
+    // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+    if (event.target.matches(".close") || !event.target.closest(".header")) {
+      closeNav();
+    }
+  },
+  false
+);
 
-window.addEventListener('scroll',function() {
-    let header = document.querySelector('#header');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('scrolling-acitve',windowPosition);
-})
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("#header");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("scrolling-acitve", windowPosition);
+});
 
-window.addEventListener('scroll',function() {
-    let header = document.querySelector('.close');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('close-top',windowPosition);
-})
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".close");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("close-top", windowPosition);
+});
 
-window.addEventListener('scroll',function() {
-    let header = document.querySelector('.menu-alt');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('menu-alt-resize',windowPosition);
-})
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".menu-alt");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("menu-alt-resize", windowPosition);
+});
 
-window.addEventListener('scroll', function () {
-    let header = document.querySelector('.logo-name');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('color-white', windowPosition);
-})
-
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".logo-name");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("color-white", windowPosition);
+});
 
 // scroll reveal
 
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '80px',
-//     duration: 1500,
-//     // reset: true
-// });
+const sr = ScrollReveal({
+  distance: "80px",
+  duration: 800,
+  reset: true,
+});
 
-// // Home
-// sr.reveal('.ban_img', {});
-// sr.reveal('.ban_title', { delay: 200 });
-// sr.reveal('.ban_text', { delay: 300 });
-// sr.reveal('.btn_con', { interval: 200 });
+// Home
+sr.reveal(".ban_img", { origin: "top" });
+sr.reveal(".ban_title", { delay: 100 });
+sr.reveal(".ban_text", { delay: 100 });
+sr.reveal(".btn_con", { delay: 200 });
 
-// // About section
-// sr.reveal('.sub-heading', {});
-// sr.reveal('.about_img', {});
-// sr.reveal('.about_sub', { delay: 250 });
-// sr.reveal('.about_text', { delay: 300 });
+// sections
+sr.reveal(".sub-heading", { origin: "top" });
+sr.reveal(
+  ".about_img, .sk1, .exp_img, .l1, .contact-input, .message-area, .contact2",
+  {
+    origin: "left",
+  }
+);
+sr.reveal(".about_text, .sk2, .exp_text, .l2, .con_sub, .con_text", { origin: "right" });
 
-// // Skills Section
-// sr.reveal('.sk1', { });
-// sr.reveal('.sk2', { delay: 250});
-// sr.reveal('.sk3', { delay: 500});
 
-// // Portfolio Section
-// sr.reveal('.port_sec', {delay: 250});
+// Set Nav link active  while scroll
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
 
-// // Experience section
-// sr.reveal('.exp_img', { delay: 250 });
-// sr.reveal('.exp_text', { delay: 300 });
+function navHighlighter() {
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 130;
+    sectionId = current.getAttribute("id");
 
-// // contact Section
-// sr.reveal('.contact-input', { delay: 200 });
-// sr.reveal('.message-area', { delay: 250 });
-// sr.reveal('.contact2', { interval: 200 });
-// sr.reveal('.con_sub', { delay: 250 });
-// sr.reveal('.con_text', { delay: 300 });
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".navmenu a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".navmenu a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+}
+
+
+
+
+
+
+
 
 
 // zoom effect for image
@@ -95,8 +111,7 @@ window.addEventListener('scroll', function () {
 //     banImg.style.transition = "all .2s ease-out";
 // })
 
-
-// typing effect 
+// typing effect
 // const words = ["Hi I'm Anthony"];
 
 // let count = 0;
@@ -110,7 +125,7 @@ window.addEventListener('scroll', function () {
 //     }
 //     currentText = words[count];
 //     letter = currentText.slice(0,++index);
-    
+
 //     document.querySelector('.typing').textContent = letter;
 
 //     if(letter.length === currentText.length){
@@ -119,4 +134,3 @@ window.addEventListener('scroll', function () {
 //     }
 //     setTimeout(type,500);
 // })();
-

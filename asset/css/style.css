@@ -350,8 +350,13 @@ img {
     font-family: 'poppins-medium';
     color: var(--sry-white);
     font-size: 16px;
+    border-bottom: 2px solid transparent;
 }
 .nav-item:hover{
+    border-bottom: 2px solid var(--sry-white);
+    transition:all .1s;
+}
+.active {
     border-bottom: 2px solid var(--sry-white);
     transition:all .1s;
 }
@@ -379,23 +384,23 @@ img {
     background: linear-gradient(to top, rgb(255,255,255) , #1976D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ #B5DAFF*/
 
 }
-#banner .col{
+.banner .col{
     width: 100%;
     flex-direction: column;
 }
-#banner h1{
+.banner h1{
     line-height: 1;
     transition: all .3s ease;
 }
-#banner .name {
+.banner .name {
     color: var(--pry-blue);
 }
-#banner img{
+.banner img{
     width: 160px;
     box-shadow: 0 0 10px var(--pry-blue);
     border-radius: 100px;
 }
-/* #banner img:hover{
+/* .banner img:hover{
     transform: scale(1.1);
     transition: .3s;
 } */
@@ -423,7 +428,7 @@ img {
     }
 }
 
-#banner p{
+.banner p{
     font-size: 28px;
     color: var(--pry-text);
     text-align: center;

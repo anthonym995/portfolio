@@ -30,14 +30,14 @@
                         <a href="javascript:void(0)"><img class="menu" onclick="openNav()" src="./asset/img/menu.png" alt="menu"></a>
 
                     </div>
-                    <div class="col nav col-w-auto" id="nav">
+                    <nav class="col nav col-w-auto navmenu" id="nav">
 
                         <div class="menu-alt"><h3>Menu</h3></div>
 
                         <ul class="nav-list">
-                            <!-- <li>
-                                <a class="nav-item" href="#"><i class='bx bxs-home'></i>Home</a>
-                            </li> -->
+                            <li>
+                                <a class="nav-item" href="#home"><i class='bx bxs-home'></i>Home</a>
+                            </li>
                             <li>
                                 <a class="nav-item" href="#about">About</a>
                             </li>
@@ -45,10 +45,10 @@
                                 <a class="nav-item" href="#skills">Skills</a>
                             </li>
                             <li>
-                                <a class="nav-item" href="#portfolio"></i>project</a>
+                                <a class="nav-item" href="#portfolio">project</a>
                             </li>
                             <li>
-                                <a class="nav-item" href="#experience"></i>Experience</a>
+                                <a class="nav-item" href="#experience">Experience</a>
                             </li>
                             <li>
                                 <a class="nav-item" href="#contact">Contact</a>
@@ -56,7 +56,7 @@
                         </ul>
                         <a href="javascript:void(0)"><img class="close" onclick="closeNav()" src="./asset/img/close.png" alt="menu"></a>
 
-                    </div>
+                    </>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
 
     <div class="wrapper">
 
-        <div id="banner" class="section-header ban-bg">
+        <section id="home" class="section-header ban-bg banner">
             <div class="container">
                 <div class="row p32"></div>
                 <div class="row mx-auto">
@@ -85,9 +85,9 @@
                 </div>
                 <!-- <div class="row p32"></div> -->
             </div>
-        </div>
+        </section>
 
-        <div id="about" class="section">
+        <section id="about" class="section">
             <div class="container">
                 <div class="row centre pb40 pt20 pt30-sm">
                     <span class="sub-heading">About</span>
@@ -107,9 +107,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="skills" class="section">
+        <section id="skills" class="section">
             <div class="container">
                 <div class="row centre pb40 pt20 pt30-sm"><span class="sub-heading">Skills</span></div>
 
@@ -128,7 +128,7 @@
                             </div>
                         </div>
 
-                        <div class="skill-container sk2">
+                        <div class="skill-container sk1">
                             <div class="skill-name">
                                 <span class="text"><i class='bx bxl-javascript' ></i>Javascript</span>
                             </div>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
 
-                        <div class="skill-container sk3">
+                        <div class="skill-container sk1">
                             <div class="skill-name">
                                 <span class="text"><i class='bx bxl-react'></i>React.js</span>
                             </div>
@@ -156,7 +156,7 @@
 
                     <div class="col col-w-auto">
 
-                        <div class="skill-container sk1">
+                        <div class="skill-container sk2">
                             <div class="skill-name">
                                 <span class="text"><i class='bx bxl-nodejs'></i>Node.js/Express.js</span>
                             </div>
@@ -180,7 +180,7 @@
                             </div>
                         </div>
 
-                        <div class="skill-container sk3">
+                        <div class="skill-container sk2">
                             <div class="skill-name">
                                 <span class="text"><i class='bx bxl-bootstrap'></i>Bootstratp/TailwindCSS</span>
                             </div>
@@ -195,10 +195,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div id="portfolio" class="section">
+        <section id="portfolio" class="section">
             <div class="container">
 
                 <div class="row centre pb40 pt20 pt30-sm"><span class="sub-heading">Sample Projects</span></div>
@@ -208,7 +208,7 @@
                     <div class="col col-w-auto f fdc">
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/labely/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l1">
                                 <img class="zimg" src="./asset/img/labely.png" alt="alt">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Labely</h3>
@@ -218,7 +218,7 @@
                         </a>
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/murugusolutions/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l1">
                                 <img class="zimg" src="./asset/img/murugugps.png" alt="alt">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">GPS Track System</h3>
@@ -228,7 +228,7 @@
                         </a>
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/tata/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l1">
                                 <img class="zimg" src="./asset/img/tata.png" alt="alt">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Tata Motors</h3>
@@ -239,7 +239,7 @@
                         
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/flipkart/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l1">
                                 <img class="zimg" src="./asset/img/fastkart.jpg" alt="Flipcart UI">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Flipkart UI</h3>
@@ -253,7 +253,7 @@
                     <div class="col col-w-auto f fdc">
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/orderliee/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l2">
                                 <img class="zimg" src="./asset/img/orderliee.png" alt="alt">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Orderliee</h3>
@@ -263,7 +263,7 @@
                         </a>
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/commerce-universal/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l2">
                                 <img class="zimg" src="./asset/img/Commerce_Universal.jpg" alt="Commerce_universal">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Commerce_universal</h3>
@@ -273,7 +273,7 @@
                         </a>
 
                         <a target="_blank" href="https://anthonym995.github.io/portfolio/src/itechuniversal/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l2">
                                 <img class="zimg" src="./asset/img/itech.png" alt="itech">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Itech Universal</h3>
@@ -283,7 +283,7 @@
                         </a>
 
                         <a target="_blank" href="https://blog-a11.vercel.app/">
-                            <div class="col box port_sec mx-auto centre mb-40-sm">
+                            <div class="col box port_sec mx-auto centre mb-40-sm l2">
                                 <img class="zimg" src="./asset/img/blogapp.png" alt="itech">
                                 <div class="overlay centre fdc">
                                     <h3 class="overlay-head">Blog App</h3>
@@ -292,16 +292,14 @@
                             </div>
                         </a>
 
-                        
-
                     </div>
 
 
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="experience" class="section">
+        <section id="experience" class="section">
             <div class="container">
                 <div class="row centre pb40 pt20 pt30-sm"><span class="sub-heading">Experience</span></div>
                 <div class="row row-f dir-col">
@@ -321,9 +319,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="contact" class="section">
+        <section id="contact" class="section">
             <div class="container">
                 <div class="row centre pb40 pt20 pt30-sm"><span class="sub-heading">Contact</span></div>
                 <div class="row row-f dir-col">
@@ -359,7 +357,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div id="footer" class="footer-section">
             <div class="container">
