@@ -148,7 +148,7 @@ img {
 
 .wrapper {width: 100%;margin: 0 auto;overflow: hidden;}
 .section {width: 100%;padding: 60px 0;}
-.section-header {width: 100%;padding: 90px 0;}
+.section-header {width: 100%;padding: 90px 0 60px 0;}
 .footer-section{padding: 30px;}
 .container {margin: 0 auto !important;}
 .row-f{display: flex;}
@@ -590,12 +590,13 @@ img {
 .port_sec {
     overflow: hidden;
     transition: all ease-in-out .3s;
+    border: 4px solid transparent;
 }
 .zimg {
     transition: all ease-in-out .3s;
 }
 .port_sec:hover {
-    border: 5px solid var(--try-blue);
+    border: 4px solid var(--try-blue);
 }
 .port_sec:hover .zimg {
     transform: scale(1.3);
