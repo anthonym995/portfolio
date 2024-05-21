@@ -353,7 +353,7 @@ img {
 }
 .nav-item:hover{
     border-bottom: 2px solid var(--sry-white);
-    transition:all .3s;
+    transition:all .1s;
 }
 #header i{
     padding: 0 4px 0 0;
