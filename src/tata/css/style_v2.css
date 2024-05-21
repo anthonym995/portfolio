@@ -1,0 +1,305 @@
+/* how to participate page */
+
+/* banner section */
+.banner-section-2 {
+    background-image: url(../images/Howtoparticipate_banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+
+.box-position-set {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.box-content {
+    width: 280px;
+    height: 80px;
+    background-color: white;    
+}
+.box-content h2 {
+    font-size: 46px !important;
+    font-family: KohinoorDevanagari-Bold, sans-serif !important;
+    text-align: center !important;
+    line-height: 80px !important;
+    color: #0A0A5F;
+    letter-spacing: 0px !important;
+}
+
+@media only screen and (max-width: 580px) {
+    .box-content {
+        width: 260px;
+        height: 80px;
+        background-color: white; 
+        margin-left: 32px;   
+    }
+    .box-content h2 {
+        font-size: 36px !important;
+    }
+}
+
+
+
+/* bread crumbs section */
+.bread-crumbs ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bread-crumbs ul li {
+    list-style-type: none;
+    padding: 0 1rem 0 0;
+    line-height: 1;
+}
+
+.bread-crumbs ul li a{
+    font-family: kohinoordevanagari-regular,sans-serif;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 1.3;
+    color: #0A0A5F;
+}
+.arrow {
+    font-size: 18px;
+    line-height: 14px !important;
+}
+@media only screen and (max-width: 580px) {
+    .bread-crumbs ul {
+        padding: 0;
+        margin: 0 0 0 32px;
+    }
+}
+
+/* grid section */
+.grid-flex  {
+    padding: 80px 0 50px;
+    background-image: url(../images/blue_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.grid-flex h2 {
+    font: 2.25rem/3.4375rem 'KohinoorDevanagari-Bold';
+    font-weight: bold;
+    margin-bottom: 32px;
+    color: #fff; 
+}
+.flex-list {
+    flex-wrap: wrap;
+}
+.flex-item {
+    width: 355px;
+    height: auto;
+    margin:28px 35px 28px 0px;
+}
+.img-content {
+    width: 160px;
+    height: auto;
+    position: relative;
+}
+.img-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+.count {
+    position: absolute;
+    color: #fff;
+    font-size: 70px;
+    top: 0%;
+    left: 22%;
+}
+.c1 {
+    color: #FFBE00;
+}
+.c2 {
+    color: #EF4C45;
+}
+.c3 {
+    color: #FA5D0E;
+}
+.c4 {
+    color: #C3DF01;
+}
+.c5 {
+    color: #08FBFF;
+}
+.text-content p, .grid-text{
+    color: #fff;
+}
+.grid-text {
+    margin-top: 32px;
+}
+.person-bg img {
+    width: 100%;
+}
+.grid-text {
+    font-size: 18px;
+}
+.person-main {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: -12%;
+    width: 460px;
+    height: auto;
+}
+.person-main img{
+    width: 100%;
+    height: auto;
+}
+<<<<<<< HEAD
+@media only screen and (max-width:580px) {
+    .person-main {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:767px) {
+    .person-main {
+
+    }
+}
+=======
+>>>>>>> 006c2946a5959195093cd50dcbccdc7a1a2a6a1b
+
+/* code for responsive */
+
+@media only screen and (max-width:580px) {
+    .person-main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .person-bg {
+        display: none;
+    }
+    .row-fix .col-lg-6 {
+        width: 100% !important;
+    }  
+}
+
+@media only screen and (min-width:1025px) {
+    .person-main {
+        display: none;
+    }
+    .person-bg {
+        display: block;
+    }
+    .person-bg {
+        position: absolute;
+        bottom: -7%;
+        right: 0%;
+        width: 370px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .person-bg {
+        position: absolute;
+        bottom: -7%;
+        right: 0%;
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .flex-list {
+        justify-content: center !important;
+    }
+    
+}
+@media only screen and (min-width: 1281px) {
+    .person-bg {
+        display: block;
+        position: absolute;
+        bottom: -7%;
+        right: 0%;
+        width: 460px;
+    }
+    .person-main {
+        display: none;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .flex-list {
+        justify-content: start !important;
+    }
+    .flex-item {
+        width: 100%;
+        margin:28px 0px;
+    }
+}
+/* code for responsive ends here... */
+
+/* grid flex section two  */
+
+.grid-flex-2 {
+    padding: 80px 0 50px;
+    background-image: url(../images/yellow_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+
+
+.grid-flex-2 h2 {
+    margin-bottom: 32px;
+    color: #0A0A5F;
+}
+
+/* box grid */
+.box-item {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+}
+.box-head {
+    background-color: #173290;
+    padding: 34px 0;
+    border-radius: 8px 8px 0px 0px;
+}
+.box-head img {
+    height: 38px;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.box-head h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.3;
+}
+.box-body {
+    background-image: url(../images/yellow_gradient.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 38px 0; 
+    border-radius:  0px 0px 8px 8px;
+}
+.box-body span {
+    display: block;
+    color: #0A0A5F;
+    font-family: KohinoorDevanagari-Semibold, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.box-body h4 {
+    font-size: 36px;
+    font-family: KohinoorDevanagari-Bold,sans-serif !important;
+    font-weight: bold;
+}
+.text-2 {
+    font-size: 24px;
+    color: #0A0A5F;
+    font-family: KohinoorDevanagari-Regular, sans-serif;
+}
