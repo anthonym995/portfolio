@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Labely</title>
+</head>
+
+<body class="bg">
+
+    <!-- wrapper starts here -->
+    <div class="wrapper position-relative">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-trasparent fixed-top py-2 py-xxl-2">
+            <!-- To fix the navbar top use class "fixed-top" -->
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand fs-4" href="#">
+                    <img src="./src/img/Labely_White Colour_Logo 1.png" class="logo" alt="">
+                </a>
+                <!-- toggle -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LABELY</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navmenu navbar-nav justify-content-end flex-grow-1 pe-3 position-relative">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#labely">LABELY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how-it-works">HOW IT WORKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#label-design">LABEL DESIGN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">CONTACT US</a>
+                            </li>
+                            <div class="line"></div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sidebar ends here -->
+
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section id="home" class="banner">
+            <div class="container h-100 position-relative">
+                <div class="row h-100 text-light">
+                    <div class="col d-flex flex-column align-items-center">
+                        <h2 class="banner-text1">QICK BARCODE <span class="orange">LABELY</span> FOR EASY USE</h2>
+                        <h2 class="banner-text2">Customizable Barcode <span class="orange">Generator</span></h2>
+                        <div class="position-relative">
+                            <button class="freebtn">FREE TRIAL</button>
+                            <img class="arrow-img arrow-back" src="./src/icons/akar-icons_arrow-back.png" alt="">
+                        </div>
+                        <p>By <span>Agaramsoft</span> start your free trial stay with us</p>
+                        <div class="btns-group">
+                            <button class="trialbtn ">START YOUR FREE TRIAL</button>
+                            <button class="trialbtn">STAY WITH US ON</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="labely" class="about">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-end">
+                    <span class="about-lebely about-text1 text-end">LABELY</span>
+                </div>
+                <div class="row position-relative px-sm-3">
+                    <h2 class="about-text2">
+                        ABOUT <span class="orange">LABELY</span>
+                    </h2>
+                    <P>Print Engine is an online tool that connects your <span>ZOHO INVENTORY, ZOHO BOOKS, ZOHO CREATOR,
+                            ZOHO CRM</span> app with one or more printers at a time without downloading <span> PRODUCT
+                            LABEL </span> or <span> SHIPPING LABEL</span> on your Computer.</P>
+                    <ul>
+                        <li>
+                            <img src="./src/icons/Vector.png" alt="">
+                            Low time consumption
+                        </li>
+                        <li>
+                            <img src="./src/icons/Vector.png" alt="">
+                            Reliable
+                        </li>
+                        <li>
+                            <img src="./src/icons/Vector.png" alt="">
+                            No File storage Needed
+                        </li>
+                        <li>
+                            <img src="./src/icons/Vector.png" alt="">
+                            Faster
+                        </li>
+                    </ul>
+                    <img class="price-img price-tag" src="./src/img/Price Tag.png" alt="">
+                </div>
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- howitworks -->
+        <section id="how-it-works" class="works">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-end mb-4">
+                    <span class="client-text about-text1 text-end">HOW IT WORKS</span>
+                </div>
+                <div class="row mb-xxl-5 mb-4">
+                    <h3 class="client-title">OUR CLIENT RATING</h3>
+                </div>
+                <div class="row d-flex justify-content-evenly mb-3 mb-xxl-4 flex-wrap">
+
+                    <div class="box position-relative mb-sm-4 sq1">
+                        <img class="author position-absolute" src="./src/img/imgOne.png" alt="">
+                        <div class="d-flex justify-content-end">
+                            <div class="stars mb-2 mx-3 mx-xxl-4 mb-xxl-2">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                            </div>
+                        </div>
+                        <div class="square">
+                            <p class="pt-3">AgaramSoft made my business very ease and comfortable. The "Labrly" Barcode
+                                printer with "ZOHO Technology" is developed very well. Other business gentle men or
+                                women can opt for this product. They use "Just In Time" concept for the service. I hope
+                                they have very structured system. Clients like me can trust them.Thank you AgaramSoft
+                                for your innovative product.!</p>
+                        </div>
+                    </div>
+
+                    <div class="box position-relative mb-sm-4 sq2">
+                        <img class="author position-absolute" src="./src/img/imgTwo.png" alt="">
+                        <div class="d-flex justify-content-end">
+                            <div class=" stars mb-2 mx-3 mx-xxl-4 mb-xxl-2">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                            </div>
+                        </div>
+                        <div class="square">
+                            <p class="pt-3">Hi Everyone, Ive had the privilege of using Justins incredible skills and
+                                talent to help develop our systems. One of the products Justin installed was his
+                                PrintEngine. The PrintEngine ties in with Zoho Inventory and Zoho Books, Justin
+                                customized the label to suit our needs which included qr-coding ability. Now we are able
+                                to utilize mobile technology to pick-stock from our inventory and scan the qr code to
+                                fill the orders. <a href="" style="color: #2B28AA;"
+                                    class="pl-3 text-decoration-none">Read more</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex justify-content-evenly flex-wrap">
+
+                    <div class="box position-relative mb-sm-4 sq3">
+                        <img class="author position-absolute" src="./src/img/imgThree.png" alt="">
+                        <div class="d-flex justify-content-end">
+                            <div class=" stars mb-2 mx-3 mx-xxl-4 mb-xxl-2">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                            </div>
+                        </div>
+                        <div class="square">
+                            <p class="pt-3">Justin and his team is proficient in getting the work done in a superb short
+                                period. Their understanding and getting things done the way client expects is super. No
+                                need to spend hours on explaining the demand, but the delivery is
+                                applaudable. Initial experience on label customisation and other activities went on
+                                smooth and further activities are also being handled without any hazels! kudos team!</p>
+                        </div>
+                    </div>
+
+                    <div class="box position-relative mb-sm-4 sq4">
+                        <img class="author position-absolute" src="./src/img/imgFour.png" alt="">
+                        <div class="d-flex justify-content-end">
+                            <div class="stars mb-2 mx-3 mx-xxl-4 mb-xxl-2">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                                <img src="./src/icons/ph_star-fill.png" alt="">
+                            </div>
+                        </div>
+                        <div class="square">
+                            <p class="pt-3">I hired Justin and his team to develop a mobile app for my warehouse
+                                employees. With the invention of this app it will save me 25 mins per inspection. The
+                                best part of the app is it syncs with zoho. I would recommend Justin’s team to
+                                anyone who has a software idea...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex justify-content-center mt-4">
+                    <button class="read">Read more</button>
+                </div>
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+
+            </div>
+        </section>
+
+        <!-- how it works -->
+        <section class="works2">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-end mb-4">
+                    <span class="client-text2 about-text1 text-end">HOW IT WORKS</span>
+                </div>
+                <div class="row mb-xxl-5 mb-4">
+                    <h3 class="client-title2">HOW IT WORKS</h3>
+                </div>
+                <div>
+                    <img class="info-img" src="./src/img/How it works_Infographic.jpg" alt="">
+                </div>
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- label design section -->
+        <section id="label-design" class="design">
+            <div class="container position-relative">
+
+                <div class="row d-flex justify-content-end mb-4">
+                    <span class="label-text about-text1 text-end">LABEL DESIGNS</span>
+                </div>
+            
+                <!-- Swiper -->
+                <div class="swiper-container swiper1 "> <!-- swiper container-->
+                
+                    <div class="swiper-wrapper"> <!-- swiper container-->
+                
+                        <div class="swiper-slide">
+                            <div class="row barslide">
+                
+                                <div class="box1 col-sm-12 col-lg-6 col-xxl-4 d-flex justify-content-center flex-column">
+                
+                                    <img class="mb-4" src="./src/img/two.png" alt="">
+                                    <img class="mb-4" src="./src/img/three.png" alt="">
+                                    <img class="mb-4" src="./src/img/four.png" alt="">
+                
+                                </div>
+                                <div class="box2 col-sm-12 col-lg-6 col-xxl-4  d-flex justify-content-center flex-column">
+                
+                                    <img class="mb-4" src="./src/img/five.png" alt="">
+                                    <img class="mb-4" src="./src/img/six.png" alt="">
+                                    <img class="mb-4" src="./src/img/seven.png" alt="">
+                
+                                </div>
+                                <div class="box3 col-sm-12 col-lg-6 col-xxl-4 d-flex justify-content-center flex-column">
+                
+                                    <img class="mb-4" src="./src/img/five.png" alt="">
+                                    <img class="mb-4" src="./src/img/six.png" alt="">
+                                    <img class="mb-4" src="./src/img/seven.png" alt="">
+                
+                                </div>
+                
+                            </div>
+                        </div>
+                
+                    </div> <!-- End of swiper container-->
+                
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swipe-btn"></div>
+                
+                    <div class="swiper-button-prev swipe-btn"></div>
+                
+                </div> <!-- End swiper wrapper-->
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+
+            </div>
+
+            
+
+        </section>
+
+
+        <!-- form section -->
+        <section id="contact-us" class="freetrial">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-end mb-4">
+                    <span class="free-trial-text about-text1 text-end">FREE TRIAL</span>
+                </div>
+                <div class="row mb-xxl-5 mb-4">
+                    <h3 class="client-title3">START YOUR FREE TRIAL TODAY!</h3>
+                </div>
+
+                <div class="row">
+                    <form class="frm" action="">
+                        <div class="frm-row d-flex mb-xxl-5 mb-3">
+                            <div class="labelbox">
+                                <label for="name">Name<span> * </span>:</label>
+                            </div>
+                            <div class="input-bg">
+                                <div class="inputbox">
+                                    <input id="name" name="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row d-flex mb-xxl-5 mb-3">
+                            <div class="labelbox">
+                                <label for="name">Company<span> * </span>:</label>
+                            </div>
+                            <div class="input-bg">
+                                <div class="inputbox">
+                                    <input id="name" name="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row d-flex mb-xxl-5 mb-3">
+                            <div class="labelbox ">
+                                <label for="name">E - Mail<span> * </span>:</label>
+                            </div>
+                            <div class="input-bg">
+                                <div class="inputbox">
+                                    <input id="name" name="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row d-flex mb-xxl-5 mb-3">
+                            <div class="labelbox">
+                                <label for="name">Whatsapp Number<span> * </span>:</label>
+                            </div>
+                            <div class="input-bg">
+                                <div class="inputbox">
+                                    <input id="name" name="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center register">
+                            <button class="register-text register-btn">Register your free trial</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <!-- bar -->
+                <img class="barcode" src="./src/img/barcode.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="container">
+                <div class="row d-flex">
+
+                    <div class="col d-flex  flex-row">
+                        <a href="#">
+                            <img class="logo" src="./src/img/Labely_White Colour_Logo 1.png" alt="">
+                        </a>
+                        <div class="text-light f-text">
+                            <p class="mb-2 mt-xxl-3 mt-sm-2">Office Address:</p>
+                            <p class="mb-0">Ramana Nagar, Kattampoondi, <br>Tiruvannamalai (Dt) ,<br>Tamilnadu - 606808,<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex  flex-row justify-content-lg-end justify-content-sm-start">
+                        <div class="f-img mt-xxl-3 mt-lg-2 mt-sm-0">
+                            <img src="./src/img/footerimg.png" alt="">
+                        </div>
+                        <div class="text-info">
+                            <div class="mb-3 mb-xxl-4 mt-xxl-3 mt-sm-2">
+                                <a href=""><img src="./src/icons/twitter.png" alt=""></a>
+                                <a href=""><img src="./src/icons/google.png" alt=""></a>
+                                <a href=""><img src="./src/icons/facebook.png" alt=""></a>
+                                <a href=""><img src="./src/icons/insta.png" alt=""></a>
+                            </div>
+                            <p>info@agaramsfot.in</p>
+                            <p class="mb-0">Call: +91 9840559333</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- wrapper ends here -->
+
+    
+
+    <!-- Swiper JS -->
+    <script src="./src/plugins/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // swiper1
+        var swiper1 = new Swiper('.swiper1', {
+            slidesPerView: 1,
+            // spaceBetween: 30,
+            loop: true,
+            //followFinger: true,
+            //grabCursor: true,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+            // For Pagination
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true,
+                dynamicBullets: false,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <!-- Scroll Reveal -->
+    <script src="./src/plugins/scrollreveal.min.js"></script>
+    
+    <script src="./src/js/main.js"></script>
+
+    
+
+</body>
+
+</html>
