@@ -523,44 +523,44 @@ img {
 
 /* ===== Portfolio ===== */
 
-#portfolio img{
+#projects img{
     max-width: 90% !important;
     width: 100%;
     display: block;
 }
 
-#portfolio .box{
+#projects .box{
     position: relative;
     width: 90%;
     overflow: hidden;
 }
-#portfolio a {
+#projects a {
     width: 90%;
     margin: 10px auto;
 }
 @media only screen and (max-width: 767px) {
-    #portfolio .box{
+    #projects .box{
         width: 90%;
         overflow: hidden;
     }
-    #portfolio a {
+    #projects a {
         width: 90%;
         margin: 10px auto;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    #portfolio .box{
+    #projects .box{
         position: relative;
         width: 90%;
         overflow: hidden;
     }
-    #portfolio a {
+    #projects a {
         width: 90%;
         margin: 10px auto;
     }
 }
 
-#portfolio .overlay{
+#projects .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -572,16 +572,16 @@ img {
     transition:all .3s ease-in-out;
 }
 
-#portfolio .overlay-head{
+#projects .overlay-head{
     color: var(--sry-white);
     font-size: 24px;
 }
-#portfolio .overlay-para{
+#projects .overlay-para{
     color: var(--sry-white);
     font-size: 18px;
 }
 
-#portfolio .port_sec:hover .overlay{
+#projects .port_sec:hover .overlay{
     top: -100%;
     left: -100%;
     width: 100%;
