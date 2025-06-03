@@ -44,7 +44,7 @@ section {
 /* navbar */
 
 .logo {
-    width: 90px;
+    width: 60px;
 }
 .nav-item {
     margin-right: 8px;
@@ -130,7 +130,7 @@ section {
 
 @media(min-width:1800px) {
     .logo {
-        width: 160px;
+        width: 60px;
     }
     .nav-item {
         font-size: 28px !important;
